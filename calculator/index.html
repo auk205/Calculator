@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Simple Calculator | CodeAlpha</title>
+
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+    
+    <div class="calculator">
+
+    
+        <h1>Simple Calculator</h1>
+
+        <p class="developer">
+            Frontend Development Project
+        </p>
+
+        
+        <div class="time-box">
+
+            <span id="clock">00:00:00</span>
+
+        </div>
+
+        
+        <div class="display">
+
+            <input
+                type="text"
+                id="screen"
+                placeholder="0"
+                readonly>
+
+        </div>
+
+        
+        <div class="buttons">
+
+            
+            <button class="clear-btn" onclick="clearScreen()">AC</button>
+
+            <button class="delete-btn" onclick="deleteValue()">⌫</button>
+
+            <button class="operator-btn" onclick="displayValue('%')">%</button>
+
+            <button class="operator-btn" onclick="displayValue('/')">÷</button>
+
+            
+            <button onclick="displayValue('7')">7</button>
+
+            <button onclick="displayValue('8')">8</button>
+
+            <button onclick="displayValue('9')">9</button>
+
+            <button class="operator-btn" onclick="displayValue('*')">×</button>
+
+        
+            <button onclick="displayValue('4')">4</button>
+
+            <button onclick="displayValue('5')">5</button>
+
+            <button onclick="displayValue('6')">6</button>
+
+            <button class="operator-btn" onclick="displayValue('-')">−</button>
+
+            
+            <button onclick="displayValue('1')">1</button>
+
+            <button onclick="displayValue('2')">2</button>
+
+            <button onclick="displayValue('3')">3</button>
+
+            <button class="operator-btn" onclick="displayValue('+')">+</button>
+
+            
+            <button class="theme-btn" onclick="changeTheme()">
+
+                🌙
+
+            </button>
+
+            <button onclick="displayValue('0')">0</button>
+
+            <button onclick="displayValue('.')">.</button>
+
+            <button class="equal-btn" onclick="calculateResult()">=</button>
+
+        </div>
+
+        
+        <div class="extra-buttons">
+
+            <button onclick="copyAnswer()">
+
+                📋 Copy Answer
+
+            </button>
+
+            <button onclick="clearHistory()">
+
+                🗑 Clear History
+
+            </button>
+
+        </div>
+
+    </div>
+
+    
+    <div class="history-box">
+
+        <h2>Calculation History</h2>
+
+        <ul id="history">
+
+        </ul>
+
+    </div>
+
+
+    <footer>
+
+        <p>
+
+            © 2026 | Frontend Development Internship Project
+
+        </p>
+
+    </footer>
+
+    
+    <script src="script.js"></script>
+
+</body>
+
+</html>
